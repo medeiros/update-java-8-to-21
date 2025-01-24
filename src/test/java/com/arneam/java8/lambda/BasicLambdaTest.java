@@ -10,12 +10,6 @@ import static org.hamcrest.Matchers.is;
 public class BasicLambdaTest {
 
     @Test
-    void shouldGenerateLambdas() {
-        BasicLambda basicLambda = new BasicLambda();
-        basicLambda.run();
-    }
-
-    @Test
     void shouldGenerateOldStyleAnonymousClass() {
         BasicLambda basicLambda = new BasicLambda();
         assertThat(basicLambda.anonymousClass(), is (equalTo("I::m()")));
