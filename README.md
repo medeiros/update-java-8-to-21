@@ -2,7 +2,7 @@
 
 Simple project to practice new features added in Java lang since 1.8.
 
-![example workflow](https://github.com/medeiros/update-java-8-to-21/actions/workflows/main.yml/badge.svg)
+![main workflow](https://github.com/medeiros/update-java-8-to-21/actions/workflows/maven.yml/badge.svg)
 
 ## Pre-requirements
 
