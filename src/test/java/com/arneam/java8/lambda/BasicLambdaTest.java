@@ -1,6 +1,5 @@
 package com.arneam.java8.lambda;
 
-import com.arneam.BasicLambda;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

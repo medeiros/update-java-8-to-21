@@ -1,4 +1,4 @@
-package com.arneam;
+package com.arneam.java8.lambda;
 
 interface I {
     String m();
