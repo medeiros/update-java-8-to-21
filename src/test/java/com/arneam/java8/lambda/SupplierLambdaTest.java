@@ -14,7 +14,7 @@ class SupplierLambdaTest {
     void shouldSupplyStringBuilder() {
         SupplierLambda supplierLambda = new SupplierLambda();
         assertThat(supplierLambda.supplyMovie(), is(equalTo("ironMan")));
-        assertThat(supplierLambda.supplyRandom(), is(closeTo(1, 1)));
+        assertThat(supplierLambda.supplyRandom(), is(closeTo(0, 0)));
         assertThat(supplierLambda.supplyTime(), is(notNullValue(LocalTime.class)));
     }
 
