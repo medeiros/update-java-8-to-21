@@ -2,6 +2,8 @@
 
 Simple project to practice new features added in Java lang since 1.8.
 
+![example workflow](https://github.com/medeiros/update-java-8-to-21/actions/workflows/main.yml/badge.svg)
+
 ## Pre-requirements
 
 ### Note: Configure Maven to access HTTPS repo behind ZScaler Proxy
