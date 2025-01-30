@@ -22,7 +22,7 @@ public class BiConsumerLambdaTest {
 
     @Test
     void shouldPrintCapitalAndCountry() throws Exception {
-        String result = SystemLambda.tapSystemOut(() -> this.biConsumerLambda
+        String result = SystemLambda.tapSystemOutNormalized(() -> this.biConsumerLambda
                 .capitalAndCity("Dublin", "Ireland"));
         assertThat(result, is(equalTo("Dublin is the capital of Ireland; \n")));
     }
@@ -33,7 +33,7 @@ public class BiConsumerLambdaTest {
         capitalsCities.put("Brasilia", "Brasil");
         capitalsCities.put("Buenos Aires", "Argentina");
 
-        String result = SystemLambda.tapSystemOut(() -> this.biConsumerLambda
+        String result = SystemLambda.tapSystemOutNormalized(() -> this.biConsumerLambda
                 .capitalsAndCities(capitalsCities));
         assertThat(result, is(equalTo(
                 "Brasilia is the capital of Brasil; " +
