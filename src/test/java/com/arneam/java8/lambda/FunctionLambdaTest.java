@@ -14,8 +14,7 @@ class FunctionLambdaTest {
     @CsvSource({"daniel,6", "maria,5", "diana,5", "patricia,8"})
     void shouldGetStringSize(String name, int size) {
         FunctionLambda functionLambda = new FunctionLambda();
-        assertThat(functionLambda.stringSize(name),
-                is(equalTo(size)));
+        assertThat(functionLambda.stringSize(name), is(equalTo(size)));
     }
 
 }
