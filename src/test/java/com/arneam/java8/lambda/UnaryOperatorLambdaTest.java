@@ -8,13 +8,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
-class UnanyOperatorLambdaTest {
+class UnaryOperatorLambdaTest {
 
-    private UnanyOperatorLambda unaryLambda;
+    private UnaryOperatorLambda unaryLambda;
 
     @BeforeEach
     void setup() {
-        unaryLambda = new UnanyOperatorLambda();
+        unaryLambda = new UnaryOperatorLambda();
     }
 
     @ParameterizedTest

@@ -2,7 +2,7 @@ package com.arneam.java8.lambda;
 
 import java.util.function.UnaryOperator;
 
-public class UnanyOperatorLambda {
+public class UnaryOperatorLambda {
     public String peopleLocation(String name) {
         UnaryOperator<String> unaryOperator = String::toUpperCase;
         return unaryOperator.apply(name);
