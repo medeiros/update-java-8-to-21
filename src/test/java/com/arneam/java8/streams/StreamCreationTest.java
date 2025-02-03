@@ -63,4 +63,17 @@ class StreamCreationTest {
                 is(equalTo(4L)));
     }
 
+    @Test
+    void shouldCreateInfiniteRandomStream() {
+        assertThat(streamCreation.infiniteRandomStream(),
+                is(equalTo(100L)));
+
+    }
+
+    @Test
+    void shouldCreateInfiniteEvenStream() {
+        assertThat(streamCreation.infiniteEvenStream(),
+                is(equalTo(100L)));
+    }
+
 }

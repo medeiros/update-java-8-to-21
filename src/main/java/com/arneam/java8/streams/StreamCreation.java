@@ -45,4 +45,17 @@ public class StreamCreation {
         }
     }
 
+    public long infiniteRandomStream() {
+        return Stream.generate(Math::random)
+            .peek(System.out::println)
+            .limit(100) // if comment this line, goes to infinity
+            .count();
+    }
+
+    public long infiniteEvenStream() {
+        return Stream.iterate(0, n -> 2 + n)
+            .peek(System.out::println)
+            .limit(100) // if comment this line, goes to infinity
+            .count();
+    }
 }
