@@ -1,6 +1,5 @@
 package com.arneam.java8.methodreference;
 
-
 import java.util.function.Function;
 
 public class MethodReferenceUnbounded {
