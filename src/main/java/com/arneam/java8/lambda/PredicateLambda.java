@@ -1,7 +1,5 @@
 package com.arneam.java8.lambda;
 
-import java.util.function.Predicate;
-
 interface Eval<T> {
     boolean isNegative(T t);
 }
