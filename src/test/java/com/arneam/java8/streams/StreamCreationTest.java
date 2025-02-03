@@ -31,7 +31,8 @@ class StreamCreationTest {
 
     @Test
     void shouldCreateStreamFromCollection() {
-        assertThat(streamCreation.createFromCollection(Arrays.asList(1, 2, 3, 4)),
+        assertThat(streamCreation.createFromCollection(Arrays
+                        .asList(1, 2, 3, 4)),
                 is(equalTo(4L)));
     }
 

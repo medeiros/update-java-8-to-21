@@ -15,7 +15,8 @@ public class BiConsumerLambda {
     }
     private BiConsumer<String, String> getStringStringBiConsumer() {
         return (a, b) -> new ConsumerLambda()
-                .print(a.concat(" is the capital of ").concat(b).concat( "; "));
+                .print(a.concat(" is the capital of ")
+                        .concat(b).concat( "; "));
     }
 
 }

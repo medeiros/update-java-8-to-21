@@ -9,7 +9,8 @@ class NegativeNumberPredicateTest {
 
     @Test
     void shouldPredicateNegativeNumber() {
-        NegativeNumberPredicate negativeNumberPredicate = new NegativeNumberPredicate();
+        NegativeNumberPredicate negativeNumberPredicate =
+                new NegativeNumberPredicate();
         assertThat(negativeNumberPredicate.test(-1), is(true));
         assertThat(negativeNumberPredicate.test(1), is(false));
     }

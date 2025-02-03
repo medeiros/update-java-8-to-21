@@ -11,13 +11,15 @@ class MethodReferenceConstructorTest {
     @Test
     void shouldCreateConstructorMethodReference() {
         MethodReferenceConstructor m = new MethodReferenceConstructor();
-        assertThat(m.concat("john", "mary"), is(equalTo("john and mary")));
+        assertThat(m.concat("john", "mary"), is(equalTo(
+                "john and mary")));
     }
 
     @Test
     void shouldCreateConstructorMethodReferenceWithUppercase() {
         MethodReferenceConstructor m = new MethodReferenceConstructor();
-        assertThat(m.concatUpper("john", "mary"), is(equalTo("JOHN AND MARY")));
+        assertThat(m.concatUpper("john", "mary"), is(equalTo(
+                "JOHN AND MARY")));
     }
 
 }

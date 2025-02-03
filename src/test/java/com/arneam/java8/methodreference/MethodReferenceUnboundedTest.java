@@ -11,7 +11,8 @@ class MethodReferenceUnboundedTest {
 
     @ParameterizedTest
     @CsvSource({"john,JOHN","mary,MARY"})
-    void shouldExecuteUnBoundedMethodReference(String name, String expectedResult) {
+    void shouldExecuteUnBoundedMethodReference(String name, String
+            expectedResult) {
         MethodReferenceUnbounded m = new MethodReferenceUnbounded();
         assertThat(m.apply(name), is(equalTo(expectedResult)));
     }

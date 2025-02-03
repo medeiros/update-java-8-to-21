@@ -25,8 +25,9 @@ class StreamsLazyTest {
 
     @Test
     void shouldGetFirstPersonOfTheMagicalFilter() {
-        assertThat(stream.findFirstPersonOfMagicalFilter("April", "Ben", "Charlie",
-                        "David", "Bach", "Mozart", "Schopenhauer"),
+        assertThat(stream.findFirstPersonOfMagicalFilter("April",
+                        "Ben", "Charlie", "David", "Bach", "Mozart",
+                        "Schopenhauer"),
                 is(equalTo("Charlie")));
     }
 

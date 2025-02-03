@@ -22,7 +22,8 @@ public class StreamsLazy {
         return Stream.of(people).peek(System.out::println)
             .filter(s -> s.startsWith("B") || s.startsWith("C"))
             .filter(s -> s.length() > 3)
-            .limit(1) // it will discard the others once one item is found
+            .limit(1)   // it will discard the others once one item is
+                                // found
             .collect(Collectors.joining());
     }
 }

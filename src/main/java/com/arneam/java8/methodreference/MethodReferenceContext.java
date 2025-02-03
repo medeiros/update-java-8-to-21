@@ -13,14 +13,16 @@ public class MethodReferenceContext {
     }
 
     public int countIntegers(int oneInteger) {
-        // compiler infers that it must send one integer to the howMany function
+        // compiler infers that it must send one integer to the howMany
+        //      function
         // based on the functional interface type (function takes one param)
         Function<Integer, Integer> func = this::howMany;
         return func.apply(oneInteger);
     }
 
     public int countIntegers(int oneInteger, int otherInteger) {
-        // compiler infers that it must send two integers to the howMany function
+        // compiler infers that it must send two integers to the howMany
+        //      function
         // based on the functional interface type (BiFunction takes two params)
         BiFunction<Integer, Integer, Integer> biFunc = this::howMany;
         return biFunc.apply(oneInteger, otherInteger);

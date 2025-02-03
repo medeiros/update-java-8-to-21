@@ -13,7 +13,8 @@ class MethodReferenceStaticTest {
     @Test
     void shouldSortListItems() {
         List<Integer> numbers = Arrays.asList(2, 1, 5, 3, 4);
-        MethodReferenceStatic methodReferenceStatic = new MethodReferenceStatic();
+        MethodReferenceStatic methodReferenceStatic = new
+                MethodReferenceStatic();
         methodReferenceStatic.sort(numbers);
         assertThat(numbers, contains(1, 2, 3, 4, 5));
     }

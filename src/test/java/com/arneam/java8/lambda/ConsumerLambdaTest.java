@@ -22,7 +22,8 @@ class ConsumerLambdaTest {
 
     @Test
     void shouldPrintData() throws Exception {
-        String result = SystemLambda.tapSystemOutNormalized(() -> this.consumerLambda.print("javajava"));
+        String result = SystemLambda.tapSystemOutNormalized(() ->
+                this.consumerLambda.print("javajava"));
         assertThat(result, is(equalTo("javajava\n")));
     }
 
@@ -31,7 +32,8 @@ class ConsumerLambdaTest {
         List<String> names = new ArrayList<>();
         names.add("Joao");
         names.add("Maria");
-        String result = SystemLambda.tapSystemOutNormalized(() -> this.consumerLambda.print(names));
+        String result = SystemLambda.tapSystemOutNormalized(() ->
+                this.consumerLambda.print(names));
         assertThat(result, is(equalTo("Joao\nMaria\n")));
     }
 

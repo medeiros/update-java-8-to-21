@@ -12,9 +12,12 @@ class SupplierLambdaTest {
     @Test
     void shouldSupplyStringBuilder() {
         SupplierLambda supplierLambda = new SupplierLambda();
-        assertThat(supplierLambda.supplyMovie(), is(equalTo("ironMan")));
-        assertThat(supplierLambda.supplyRandom(), is(closeTo(1, 1)));
-        assertThat(supplierLambda.supplyTime(), is(notNullValue(LocalTime.class)));
+        assertThat(supplierLambda.supplyMovie(),
+                is(equalTo("ironMan")));
+        assertThat(supplierLambda.supplyRandom(),
+                is(closeTo(1, 1)));
+        assertThat(supplierLambda.supplyTime(),
+                is(notNullValue(LocalTime.class)));
     }
 
 }

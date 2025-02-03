@@ -23,7 +23,8 @@ class MethodReferenceContextTest {
     @Test
     void shouldGetTwoIntegers() {
         MethodReferenceContext m = new MethodReferenceContext();
-        assertThat(m.countIntegers(12, 24), is(equalTo(2)));
+        assertThat(m.countIntegers(12, 24), is(
+                equalTo(2)));
     }
 
 }

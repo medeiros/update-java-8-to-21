@@ -11,19 +11,22 @@ public class BasicLambdaTest {
     @Test
     void shouldGenerateOldStyleAnonymousClass() {
         BasicLambda basicLambda = new BasicLambda();
-        assertThat(basicLambda.anonymousClass(), is (equalTo("I::m()")));
+        assertThat(basicLambda.anonymousClass(),
+                is (equalTo("I::m()")));
     }
 
     @Test
     void shouldGenerateStatementLambda() {
         BasicLambda basicLambda = new BasicLambda();
-        assertThat(basicLambda.statementLambda(), is (equalTo("statementLambda")));
+        assertThat(basicLambda.statementLambda(),
+                is(equalTo("statementLambda")));
     }
 
     @Test
     void shouldGenerateExpressionLambda() {
         BasicLambda basicLambda = new BasicLambda();
-        assertThat(basicLambda.expressionLambda(), is (equalTo("expressionLambda")));
+        assertThat(basicLambda.expressionLambda(),
+                is(equalTo("expressionLambda")));
     }
 
 }

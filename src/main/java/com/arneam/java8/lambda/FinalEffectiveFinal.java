@@ -5,7 +5,8 @@ import java.util.function.Predicate;
 public class FinalEffectiveFinal {
     public boolean testIt(int x) {
         int y = 11;
-        //x = 13;   // if lambda uses it, the variable cannot be changed after declared,
+        //x = 13;   // if lambda uses it, the variable cannot be changed after
+                    // declared,
         //y = 14;   // since it is considered final or effective final
                     // uncomment and see the compiler error at line 11
         Predicate<Integer> predicate = (a) -> {

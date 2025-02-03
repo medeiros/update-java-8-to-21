@@ -11,15 +11,19 @@ class SomeValidatorTest {
 
     @Test
     void shouldValidateEvenNumber() {
-        assertThat(SomeValidator.check(2, n -> n % 2 == 0), is(true));
-        assertThat(SomeValidator.check(2, n -> n % 2 == 1), is(false));
+        assertThat(SomeValidator.check(2, n -> n % 2 == 0),
+                is(true));
+        assertThat(SomeValidator.check(2, n -> n % 2 == 1),
+                is(false));
     }
 
     @Test
     void shouldValidateGentleman() {
         Predicate<String> misterPredicate = s -> s.startsWith("Mr.");
-        assertThat(SomeValidator.check("Mr. Crowley", misterPredicate), is(true));
-        assertThat(SomeValidator.check("Miss Crowley", misterPredicate), is(false));
+        assertThat(SomeValidator.check("Mr. Crowley", misterPredicate),
+                is(true));
+        assertThat(SomeValidator.check("Miss Crowley", misterPredicate),
+                is(false));
     }
 
 }

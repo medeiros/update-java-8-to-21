@@ -17,14 +17,18 @@ class BiPredicateLambdaTest {
 
     @Test
     public void shouldPredicate() {
-        assertThat(this.lambda.hasCityInName("Vatican City"), (is(true)));
+        assertThat(this.lambda.hasCityInName("Vatican City"),
+                is(true));
     }
 
     @Test
     public void shouldBiPredicate() {
-        assertThat(this.lambda.hasCityInName(12,"Vatican City"), (is(true)));
-        assertThat(this.lambda.hasCityInName(13,"Vatican City"), (is(false)));
-        assertThat(this.lambda.hasCityInName(9,"Sao Paulo"), (is(false)));
+        assertThat(this.lambda.hasCityInName(12,"Vatican City"),
+                is(true));
+        assertThat(this.lambda.hasCityInName(13,"Vatican City"),
+                is(false));
+        assertThat(this.lambda.hasCityInName(9,"Sao Paulo"),
+                is(false));
     }
 
 }
