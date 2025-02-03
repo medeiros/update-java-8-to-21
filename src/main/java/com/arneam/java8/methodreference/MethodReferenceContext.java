@@ -1,4 +1,4 @@
-package com.arneam.java8.lambda;
+package com.arneam.java8.methodreference;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

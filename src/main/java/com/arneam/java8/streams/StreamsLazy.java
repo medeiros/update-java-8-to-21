@@ -1,4 +1,4 @@
-package com.arneam.java8.lambda;
+package com.arneam.java8.streams;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

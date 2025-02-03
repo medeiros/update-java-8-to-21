@@ -1,4 +1,4 @@
-package com.arneam.java8.lambda;
+package com.arneam.java8.streams;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

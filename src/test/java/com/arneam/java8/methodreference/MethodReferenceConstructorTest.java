@@ -1,4 +1,4 @@
-package com.arneam.java8.lambda;
+package com.arneam.java8.methodreference;
 
 import org.junit.jupiter.api.Test;
 
