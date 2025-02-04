@@ -12,13 +12,18 @@ public class TerminalOperation {
 
     public int min(Integer... values) {
         // terminal operation - reduce operation (look into all the elements)
-        Optional<Integer> result = Stream.of(values).min(Comparator.comparingInt(s -> s));
+        Optional<Integer> result = Stream.of(values).min(comparator());
         return result.orElse(0);
     }
 
     public int max(Integer... values) {
         // terminal operation - reduce operation (look into all the elements)
-        Optional<Integer> result = Stream.of(values).max(Comparator.comparingInt(s -> s));
+        Optional<Integer> result = Stream.of(values).max(comparator());
         return result.orElse(0);
     }
+
+    private static Comparator<Integer> comparator() {
+        return Comparator.comparingInt(s -> s);
+    }
+
 }
