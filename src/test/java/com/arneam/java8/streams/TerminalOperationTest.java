@@ -16,19 +16,22 @@ class TerminalOperationTest {
     @Test
     void shouldCallReductionOperationCount() {
         TerminalOperation terminalOperation = new TerminalOperation();
-        assertThat(terminalOperation.count(1, 2, 3), is(equalTo(3L)));
+        assertThat(terminalOperation.count(1, 2, 3),
+                is(equalTo(3L)));
     }
 
     @Test
     void shouldCallReductionOperationMin() {
         TerminalOperation terminalOperation = new TerminalOperation();
-        assertThat(terminalOperation.min(1, 2, 3), is(equalTo(1)));
+        assertThat(terminalOperation.min(1, 2, 3),
+                is(equalTo(1)));
     }
 
     @Test
     void shouldCallReductionOperationMax() {
         TerminalOperation terminalOperation = new TerminalOperation();
-        assertThat(terminalOperation.max(1, 2, 3), is(equalTo(3)));
+        assertThat(terminalOperation.max(1, 2, 3),
+                is(equalTo(3)));
     }
 
     @ParameterizedTest
